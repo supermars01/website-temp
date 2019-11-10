@@ -1,0 +1,55 @@
+.app-shell-error,
+.app-shell-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.app-shell-spinner {
+  margin: 0 auto;
+  width: 70px;
+  text-align: center;
+}
+.app-shell-spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #37f;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s ease-in-out infinite both;
+  animation: sk-bouncedelay 1.4s ease-in-out infinite both;
+}
+.app-shell-spinner .app-shell-bounce1 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.app-shell-spinner .app-shell-bounce2 {
+  -webkit-animation-delay: 0.26s;
+  animation-delay: 0.26s;
+}
+.app-shell-spinner .app-shell-bounce3 {
+  -webkit-animation-delay: 0.42s;
+  animation-delay: 0.42s;
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  to {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
