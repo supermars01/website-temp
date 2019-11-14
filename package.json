@@ -50,9 +50,12 @@
     "ie >= 9"
   ],
   "dependencies": {
+    "animate.css": "^3.7.2",
+    "bulma": "^0.8.0",
     "cssnano": "^4.1.10",
     "cssnano-preset-advanced": "^4.0.7",
     "expose-loader": "^0.7.5",
+    "fontawesome": "^5.6.3",
     "happypack": "^5.0.1",
     "hard-source-webpack-plugin": "^0.13.1",
     "html-withimg-loader": "^0.1.16",
@@ -71,6 +74,7 @@
     "purify-css": "^1.2.5",
     "purifycss-webpack": "^0.7.0",
     "webpack-dev-server": "^3.9.0",
-    "webpack-spritesmith": "^1.0.2"
+    "webpack-spritesmith": "^1.0.2",
+    "wowjs": "^1.1.3"
   }
 }

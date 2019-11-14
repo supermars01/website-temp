@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="https://s1.pstatp.com/ee/bytedance-home/static/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="字节跳动, 字节, 字节跳动官网, ByteDance, 抖音, 今日头条, tiktok">
+    <meta name="description" content="字节跳动成立于2012年3月，目前公司的产品和服务已覆盖全球150个国家和地区、75个语种，曾在40多个国家和地区位居应用商店总榜前列。">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>首页</title>
+</head>
+
+<body>
+    <div class="app-shell-loading">
+        <div class="app-shell-spinner">
+            <div class="app-shell-bounce1"></div>
+            <div class="app-shell-bounce2"></div>
+            <div class="app-shell-bounce3"></div>
+        </div>
+    </div>
+    <div class="app-shell-loaded app-shell-hide" id="app">
+        <div id="container">
+            <!--引入通用的导航部分-->
+            #include('../../tpl/header.html')
+            <div id="main">
+                <section class="wow fadeInDown" style="background-color: #f1c40f;"></section>
+                <section class="wow pulse" style="background-color: #e74c3c;" data-wow-iteration="infinite"
+                    data-wow-duration="1500ms"></section>
+                <section class="section--purple wow slideInRight" data-wow-delay="2s"></section>
+                <section class="section--blue wow bounceInLeft" data-wow-offset="300"></section>
+                <section class="section--green wow slideInLeft" data-wow-duration="4s"></section>
+            </div>
+            <!--引入通用的底部栏-->
+            #include('../../tpl/footer.html')
+        </div>
+    </div>
+    <div class="app-shell-error app-shell-hide">
+        不支持 IE 11 以下的浏览器
+    </div>
+</body>
+
+</html>

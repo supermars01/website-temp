@@ -47,7 +47,6 @@ config.HTMLDirs.forEach((page) => {
       "removeComments": true, // 移除HTML中的注释
       'collapseWhitespace': true, // 折叠空白区域 也就是压缩代码
       "removeEmptyAttributes": true,
-
     }
   });
   HTMLPlugins.push(htmlPlugin);
@@ -188,7 +187,7 @@ module.exports = {
     // new webpack.BannerPlugin('Created by YourName.')
     // 自动生成 HTML 插件
     ...HTMLPlugins,
-    // 消除冗余的css代码
+    // // 消除冗余的css代码
     // new PurifyCssWebpack({
     //   paths: glob.sync(path.join(__dirname, '../src/page/*.html'))
     // }),

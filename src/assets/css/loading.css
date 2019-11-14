@@ -1,14 +1,23 @@
+.app-shell-hide {
+  visibility: hidden;
+}
 .app-shell-error,
 .app-shell-loading {
   position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.app-shell-spinner {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.app-shell-spinner {
-  margin: 0 auto;
-  width: 70px;
-  text-align: center;
 }
 .app-shell-spinner > div {
   width: 18px;

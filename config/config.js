@@ -4,6 +4,9 @@
 
 // 项目中的html文件，不需要后缀
 const HTMLDirs = [
+  'test',
+  "animations",
+  "index1",
   "index"
 ]
 const devServer = {

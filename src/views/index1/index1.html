@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="https://s1.pstatp.com/ee/bytedance-home/static/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="字节跳动, 字节, 字节跳动官网, ByteDance, 抖音, 今日头条, tiktok">
+    <meta name="description" content="字节跳动成立于2012年3月，目前公司的产品和服务已覆盖全球150个国家和地区、75个语种，曾在40多个国家和地区位居应用商店总榜前列。">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>首页</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
+</head>
+
+<body>
+    <div class="app-shell-loading">
+        <div class="app-shell-spinner">
+            <div class="app-shell-bounce1"></div>
+            <div class="app-shell-bounce2"></div>
+            <div class="app-shell-bounce3"></div>
+        </div>
+    </div>
+    <div class="app-shell-loaded app-shell-hide" id="app">
+        <!-- <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png"
+                        alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                </a>
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="https://bulma.io/">
+                        Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                            Docs
+                        </a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                                Overview
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                                Modifiers
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                                Columns
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                                Layout
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                                Form
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                                Elements
+                            </a>
+                            <a class="navbar-item is-active"
+                                href="https://bulma.io/documentation/components/breadcrumb/">
+                                Components
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                                    data-social-target="https://bulma.io" target="_blank"
+                                    href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        Tweet
+                                    </span>
+                                </a>
+                            </p>
+                            <p class="control">
+                                <a class="button is-primary"
+                                    href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
+                                    <span class="icon">
+                                        <i class="fas fa-download"></i>
+                                    </span>
+                                    <span>Download</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav> -->
+        <div class="container is-fullhd is-widescreen">
+            <!--引入通用的导航部分-->
+            #include('../../tpl/header.html')
+            <nav class="level">
+                <!-- Left side -->
+                <div class="level-left">
+                    <div class="level-item">
+                        <p class="subtitle is-5">
+                            <strong>123</strong> posts
+                        </p>
+                    </div>
+                    <div class="level-item">
+                        <div class="field has-addons">
+                            <p class="control">
+                                <input class="input" type="text" placeholder="Find a post">
+                            </p>
+                            <p class="control">
+                                <button class="button">
+                                    Search
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side -->
+                <div class="level-right">
+                    <p class="level-item"><strong>All</strong></p>
+                    <p class="level-item"><a>Published</a></p>
+                    <p class="level-item"><a>Drafts</a></p>
+                    <p class="level-item"><a>Deleted</a></p>
+                    <p class="level-item"><a class="button is-success">New</a></p>
+                </div>
+            </nav>
+            <nav class="level">
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Tweets</p>
+                        <p class="title">3,456</p>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Following</p>
+                        <p class="title">123</p>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Followers</p>
+                        <p class="title">456K</p>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Likes</p>
+                        <p class="title">789</p>
+                    </div>
+                </div>
+            </nav>
+            <nav class="level box">
+                <div class="level-left">
+                    <p class="level-item has-text-centered">
+                        <img src="https://lqzhgood.github.io/bulma-docs-cn/images/bulma-type.png" alt=""
+                            style="height: 30px;">
+                    </p>
+                </div>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">Menu</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">Menu</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">Reservations</a>
+                </p>
+                <div class="level-right">
+                    <p class="level-item"><a class="button is-success">New</a></p>
+                </div>
+            </nav>
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                    <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child notification is-primary">
+                                <p class="title">Vertical...</p>
+                                <p class="subtitle">Top tile</p>
+                            </article>
+                            <article class="tile is-child notification is-warning">
+                                <p class="title">...tiles</p>
+                                <p class="subtitle">Bottom tile</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-info">
+                                <p class="title">Middle tile</p>
+                                <p class="subtitle">With an image</p>
+                                <figure class="image is-4by3">
+                                    <img src="https://lqzhgood.github.io/bulma-docs-cn/images/placeholders/640x480.png">
+                                </figure>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-danger">
+                            <p class="title">Wide tile</p>
+                            <p class="subtitle">Aligned with the right tile</p>
+                            <div class="content">
+                                <!-- Content -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-success">
+                        <div class="content">
+                            <p class="title">Tall tile</p>
+                            <p class="subtitle">With even more content</p>
+                            <div class="content">
+                                <!-- Content -->
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">From</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control is-expanded has-icons-left">
+                            <input class="input" type="text" placeholder="Name">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control is-expanded has-icons-left has-icons-right">
+                            <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-horizontal">
+                <div class="field-label"></div>
+                <div class="field-body">
+                    <div class="field is-expanded">
+                        <div class="field has-addons">
+                            <p class="control">
+                                <a class="button is-static">
+                                    +44
+                                </a>
+                            </p>
+                            <p class="control is-expanded">
+                                <input class="input" type="tel" placeholder="Your phone number">
+                            </p>
+                        </div>
+                        <p class="help">Do not enter the first zero</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Department</label>
+                </div>
+                <div class="field-body">
+                    <div class="field is-narrow">
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select>
+                                    <option>Business development</option>
+                                    <option>Marketing</option>
+                                    <option>Sales</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <label class="label">Already a member?</label>
+                </div>
+                <div class="field-body">
+                    <div class="field is-narrow">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="member">
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="member">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Subject</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+                        </div>
+                        <p class="help is-danger">
+                            This field is required
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Question</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary">
+                                Send message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--引入通用的底部栏-->
+            #include('../../tpl/footer.html')
+        </div>
+    </div>
+    <div class="app-shell-error app-shell-hide">
+        不支持 IE 11 以下的浏览器
+    </div>
+</body>
+
+</html>

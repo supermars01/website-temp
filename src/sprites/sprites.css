@@ -16,6 +16,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-logo {
+  background-image: url(./sprites.png);
+  background-position: 0px -63px;
+  width: 112px;
+  height: 28px;
+}
 .icon-star24_half2 {
   background-image: url(./sprites.png);
   background-position: 0px 0px;
@@ -37,16 +43,20 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 @media (-webkit-min-device-pixel-ratio: 2),
        (min-resolution: 192dpi) {
+  .icon-logo {
+    background-image: url(./sprites@2x.png);
+    background-size: 112px 91px;
+  }
   .icon-star24_half2 {
     background-image: url(./sprites@2x.png);
-    background-size: 20px 61px;
+    background-size: 112px 91px;
   }
   .icon-star24_off2 {
     background-image: url(./sprites@2x.png);
-    background-size: 20px 61px;
+    background-size: 112px 91px;
   }
   .icon-star24_on2 {
     background-image: url(./sprites@2x.png);
-    background-size: 20px 61px;
+    background-size: 112px 91px;
   }
 }

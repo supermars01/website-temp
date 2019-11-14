@@ -9,6 +9,8 @@ const path = require("path");
 const webpackMerge = require("webpack-merge");
 // 清理 dist 文件夹
 const CleanWebpackPlugin = require("clean-webpack-plugin")
+//去除冗余css样式
+const PurifyCssWebpack = require('purifycss-webpack')
 // UglifyJsPlugin
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 // 优化打包css
@@ -97,6 +99,10 @@ module.exports = webpackMerge(webpackBase, {
             verbose: true, //开启在控制台输出信息
 
             dry: false //启用删除文件
+        }),
+        // 消除冗余的css代码
+        new PurifyCssWebpack({
+            paths: glob.sync(path.join(__dirname, '../src/page/*.html'))
         }),
     ],
     performance: {

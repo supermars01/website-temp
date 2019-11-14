@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #999;
   font-size: 16px;
   line-height: 1.5;
@@ -20,12 +20,7 @@ body {
 .logo {
   width: 155px;
   padding: 10px;
-  /* height: 40px; */
   overflow: hidden;
-  /* width: 138px;
-  height: 32px;
-  background: url(image/yw-logo.png) no-repeat;
-  transform-origin: left center; */
 }
 .logo h1 {
   position: absolute;
@@ -66,7 +61,7 @@ body {
   top: -7px;
   left: 47%;
   z-index: 9;
-  content: '';
+  content: "";
   border: 0;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -91,7 +86,7 @@ body {
 .navUl li a {
   color: #333;
 }
-/* menutable */
+
 .menu {
   position: relative;
   height: 46px;
@@ -171,11 +166,8 @@ body {
 .menu.open .menu-line-3 {
   transform: translateY(-7px) translateY(50%) rotate(135deg);
 }
-/* menutable */
+
 @media screen and (max-width: 768px) {
-  .header {
-    /* height: auto; */
-  }
   .logo {
     text-align: center;
     overflow: hidden;
@@ -210,3 +202,6 @@ body {
     display: block;
   }
 }
+.fontss {
+  font-family: "icon-shuzitu-14";
+} */

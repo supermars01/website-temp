@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<html class="has-navbar-fixed-top">
 
 <head>
   <link rel="shortcut icon" type="image/png" href="https://s1.pstatp.com/ee/bytedance-home/static/img/favicon.ico">
@@ -9,11 +9,6 @@
   <meta name="viewport"
     content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <title>首页</title>
-  <style>
-    .app-shell-hide {
-      display: none
-    }
-  </style>
 </head>
 
 <body>
@@ -26,78 +21,103 @@
   </div>
   <div class="app-shell-loaded app-shell-hide" id="app">
     <!--引入通用的导航部分-->
-    <!-- #include('../../tpl/header.html') -->
-    <header>
-      <div class="constr">
-        <div class="header">
-          <a href="/" class="logo">
-            <img src="./image/logo.png" width="100%" alt="logo">
-            <h1>字条跳动</h1>
-          </a>
-          <nav class="nav">
-            <div class="navList">
-              <a class="navLink">关于我们</a>
-              <ul class="navUl">
-                <li><a href="">关于我们</a></li>
-                <li><a href="">关于我们</a></li>
-                <li><a href="">关于我们</a></li>
-                <li><a href="">关于我们</a></li>
-                <li><a href="">关于我们</a></li>
-              </ul>
+    #include('../../tpl/header.html')
+    <section class="hero is-success is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Full Height title
+          </h1>
+          <h2 class="subtitle">
+            Full Height subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-dark is-bold is-fullheight">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
+                <p class="title">Vertical...</p>
+                <p class="subtitle">Top tile</p>
+                <div class="content">
+                  <figure class="image is-2by1 wow bounceInLeft" data-wow-delay="1s"><img
+                      src="https://lqzhgood.github.io/bulma-docs-cn/images/placeholders/640x320.png"></figure>
+                </div>
+              </article>
+              <article class="tile is-child notification is-warning">
+                <p class="title">...tiles</p>
+                <p class="subtitle">Bottom tile</p>
+                <div class="content">
+                  <figure class="image is-2by1 wow rollIn" data-wow-delay="2s"><img
+                      src="https://lqzhgood.github.io/bulma-docs-cn/images/placeholders/640x320.png"></figure>
+                </div>
+              </article>
             </div>
-            <div class="navList">
-              <a class="navLink">全版权运营</a>
-              <ul class="navUl">
-                <li><a href="">关于我们</a></li>
-                <li><a href="">关于我们</a></li>
-                <li><a href="">关于我们</a></li>
-                <li><a href="">关于我们</a></li>
-                <li><a href="">关于我们</a></li>
-              </ul>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-info" data-wow-delay="3s">
+                <p class="title">Middle tile</p>
+                <p class="subtitle">With an image</p>
+                <div class="content">
+                  <figure class="image is-4by3 wow bounceIn">
+                    <img src="https://lqzhgood.github.io/bulma-docs-cn/images/placeholders/640x480.png">
+                  </figure>
+                </div>
+              </article>
             </div>
-            <div class="navList">
-              <a class="navLink">移动产品</a>
-
-            </div>
-            <div class="navList">
-              <a class="navLink">旗下品牌</a>
-
-            </div>
-            <div class="navList">
-              <a class="navLink">投资者关系</a>
-
-            </div>
-            <div class="navList">
-              <a class="navLink">新闻中心</a>
-
-            </div>
-            <div class="navList">
-              <a class="navLink">联系我们</a>
-
-            </div>
-          </nav>
-          <div class="menu">
-            <span class="menu-circle"></span>
-            <a href="#" class="menu-link">
-              <span class="menu-icon">
-                <span class="menu-line menu-line-1"></span>
-                <span class="menu-line menu-line-2"></span>
-                <span class="menu-line menu-line-3"></span>
-              </span>
-            </a>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+              <p class="title">Wide tile</p>
+              <p class="subtitle">Aligned with the right tile</p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
           </div>
         </div>
-
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-success">
+            <div class="content">
+              <p class="title">Tall tile</p>
+              <p class="subtitle">With even more contentAligned </p>
+              <div class="content">
+                <figure class="image is-2by1 wow flipInX" data-wow-delay="4s"><img
+                    src="https://lqzhgood.github.io/bulma-docs-cn/images/placeholders/640x320.png"></figure>
+                <figure class="image is-2by1 wow lightSpeedIn" data-wow-delay="5s"><img
+                    src="https://lqzhgood.github.io/bulma-docs-cn/images/placeholders/640x320.png"></figure>
+                <figure class="image is-3by2 wow flash"><img
+                    src="https://lqzhgood.github.io/bulma-docs-cn/images/placeholders/480x320.png"></figure>
+                <figure class="image is-3by2 wow zoomIn" data-wow-delay="6s"><img
+                    src="https://lqzhgood.github.io/bulma-docs-cn/images/placeholders/480x320.png"></figure>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </header>
+    </section>
+    <section class="hero is-warning is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Full Height title
+          </h1>
+          <h2 class="subtitle">
+            Full Height subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
     <!--引入通用的底部栏-->
-    <!-- #include('../../tpl/footer.html') -->
+    #include('../../tpl/footer.html')
   </div>
   <div class="app-shell-error app-shell-hide">
     不支持 IE 11 以下的浏览器
   </div>
   <!-- <%=require('html-withimg-loader!../tpl/footer.html')%> -->
-  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
 </body>
 
 </html>
