@@ -1,10 +1,15 @@
 // import 'lib-flexible';
 import 'assets/js/loading'
 import 'common/css/common.css';
-import "style-loader!css-loader!bulma/css/bulma.css";
-import 'fontawesome'
-import 'style-loader!css-loader!animate.css'
-// import './animations.css'
+$(function () {
+    $(".navbar-burger").click(function () {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    })
+});
+// import "style-loader!css-loader!bulma/css/bulma.css";
+// import 'fontawesome'
+// import 'style-loader!css-loader!animate.css'
 // import {
 //     WOW
 // } from 'wowjs'

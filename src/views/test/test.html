@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>WOW.js演示</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bulma/0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
     <style>
         * {
@@ -160,23 +161,9 @@
         </div>
     </div>
 
-    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.js"></script>
-    <script>
-        wow = new WOW(
-            {
-                boxClass: 'wow',      // 默认属性名
-                animateClass: 'animated', // 默认触发的动画类(包含在animate css中)
-                offset: 0,          // 为所有添加wow的元素设置 data-wow-delay属性 的默认值
-                mobile: true,       // 是否在移动设备中开启动画
-                live: true,        // 持续监测页面中是否插入新的wow元素
-                callback: function (box) {
-                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-                }
-            }
-        );
-        wow.init();
-    </script>
-
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.bootcss.com/font-awesome/5.11.2/js/all.min.js"></script>
 </body>
 
 </html>

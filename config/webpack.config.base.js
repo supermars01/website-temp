@@ -198,12 +198,12 @@ module.exports = {
       allChunks: true
     }),
     //全局注册jquery
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      jquery: 'jquery',
-      'window.jQuery': 'jquery'
-    }),
+    // new webpack.ProvidePlugin({
+    //   $: 'jquery',
+    //   jQuery: 'jquery',
+    //   jquery: 'jquery',
+    //   'window.jQuery': 'jquery'
+    // }),
     // 雪碧图插件
     new WebpackSpritesmithPlugin({
       // 目标小图标

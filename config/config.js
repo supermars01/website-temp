@@ -4,10 +4,10 @@
 
 // 项目中的html文件，不需要后缀
 const HTMLDirs = [
-  'test',
+  "index",
   "animations",
   "index1",
-  "index"
+  'test'
 ]
 const devServer = {
   port: 8080,

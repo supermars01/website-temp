@@ -1,6 +1,6 @@
-import {
-    WOW
-} from 'wowjs'
+// import {
+//     WOW
+// } from 'wowjs'
 var loading = document.querySelector(".app-shell-loading");
 var loaded = document.querySelector(".app-shell-loaded");
 var error = document.querySelector(".app-shell-error");

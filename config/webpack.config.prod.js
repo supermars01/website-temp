@@ -5,16 +5,16 @@
 // 引入基础配置
 const webpackBase = require("./webpack.config.base");
 const path = require("path");
+// const glob = require('glob')
 // 引入 webpack-merge 插件
 const webpackMerge = require("webpack-merge");
 // 清理 dist 文件夹
 const CleanWebpackPlugin = require("clean-webpack-plugin")
-//去除冗余css样式
-const PurifyCssWebpack = require('purifycss-webpack')
 // UglifyJsPlugin
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 // 优化打包css
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // 合并配置文件
 module.exports = webpackMerge(webpackBase, {
     mode: 'production',
@@ -100,10 +100,7 @@ module.exports = webpackMerge(webpackBase, {
 
             dry: false //启用删除文件
         }),
-        // 消除冗余的css代码
-        new PurifyCssWebpack({
-            paths: glob.sync(path.join(__dirname, '../src/page/*.html'))
-        }),
+        new BundleAnalyzerPlugin()
     ],
     performance: {
         hints: false
