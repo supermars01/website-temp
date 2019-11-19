@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
   font-size: 72px;
   line-height: 1.5;
   color: #2c3e50;
@@ -33,4 +33,88 @@ section {
 
 #more {
   margin: 20px auto 48px;
+} */
+/* MOVIE POSTERS */
+#movieposters {
+  list-style: none;
+  margin: 100px auto;
+  height: 550px;
+  width: 960px;
+}
+#movieposters .column {
+  display: inline;
+  float: left;
+  -webkit-perspective: 500;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition-property: perspective;
+  -webkit-transition-duration: 0.5s;
+}
+#movieposters .column:hover {
+  -webkit-perspective: 5000;
+}
+.content {
+  margin-bottom: 0.5rem;
+}
+#movieposters .column .card {
+  border: 10px solid #fcfafa;
+  -webkit-transform: rotateY(30deg);
+  -moz-box-shadow: 0 3px 10px #888;
+  -webkit-box-shadow: 0 3px 10px #888;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+}
+#movieposters .column:hover .card {
+  -webkit-transform: rotateY(0deg);
+}
+
+.movieinfo {
+  border: 10px solid #fcfafa;
+  padding: 20px;
+  width: 200px;
+  height: 180px;
+  background-color: #deddcd;
+  margin: -195px 0 0 55px;
+  position: absolute;
+  box-sizing: content-box;
+  -moz-box-shadow: 0 20px 40px #888;
+  -webkit-box-shadow: 0 20px 40px #888;
+  -webkit-transform: translateZ(30px) rotateY(30deg);
+  -webkit-transition-property: transform, box-shadow, margin;
+  -webkit-transition-duration: 0.5s;
+}
+.media {
+  margin-bottom: 0.5rem !important;
+}
+#movieposters .column:hover .movieinfo {
+  -webkit-transform: rotateY(0deg);
+  -webkit-box-shadow: 0 5px 10px #888;
+  margin: -175px 0 0 8px;
+}
+
+.movieinfo .title {
+  color: #7a3f3a;
+  font-variant: small-caps;
+  font-family: Georgia, serif, Times;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.movieinfo a {
+  background-color: #7a3f3a;
+  padding: 5px 10px;
+  color: #eee;
+  text-decoration: none;
+  display: block;
+  width: 80px;
+  text-align: center;
+  margin: 0 auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.movieinfo .content:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.movieinfo a:hover,
+.movieinfo a:focus {
+  background-color: #6a191f;
+  color: #fff;
 }
