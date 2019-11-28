@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="https://s1.pstatp.com/ee/bytedance-home/static/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="字节跳动, 字节, 字节跳动官网, ByteDance, 抖音, 今日头条, tiktok">
+    <meta name="description" content="字节跳动成立于2012年3月，目前公司的产品和服务已覆盖全球150个国家和地区、75个语种，曾在40多个国家和地区位居应用商店总榜前列。">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <div class="app-shell-loading">
+        <div class="app-shell-spinner">
+            <div class="app-shell-bounce1"></div>
+            <div class="app-shell-bounce2"></div>
+            <div class="app-shell-bounce3"></div>
+        </div>
+    </div>
+    <div class="app-shell-loaded app-shell-hide" id="app">
+        <!--引入通用的导航部分-->
+        #include('../../tpl/header.html')
+        <button id="example-modal-button-2" class="button is-primary">Toggle modal</button>
+
+        <div id="modal-example-2" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Modal title 1</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <p class="image is-4by3"><img src="https://bulma.io/images/placeholders/1280x960.png" alt=""></p>
+                </section>
+                <!-- <footer class="modal-card-foot">
+                    <button class="button is-success">Save changes</button>
+                    <button class="button is-danger is-outline">Cancel</button>
+                </footer> -->
+            </div>
+        </div>
+        <!--引入通用的底部栏-->
+        #include('../../tpl/footer.html')
+    </div>
+    <div class="app-shell-error app-shell-hide">
+        不支持 IE 11 以下的浏览器
+    </div>
+    <!-- <%=require('html-withimg-loader!../tpl/footer.html')%> -->
+    <!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.bootcss.com/font-awesome/5.11.2/js/all.min.js"></script>
+</body>

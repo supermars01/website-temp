@@ -3,7 +3,14 @@
  */
 
 // 项目中的html文件，不需要后缀
-const HTMLDirs = ["imgHover", "index", "animations", "index1", "test"];
+const HTMLDirs = [
+  "bulmajs",
+  "imgHover",
+  "index",
+  "animations",
+  "index1",
+  "test"
+];
 const devServer = {
   port: 8080,
   contentBase: "../dist",
