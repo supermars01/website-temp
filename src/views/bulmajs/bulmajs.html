@@ -23,6 +23,7 @@
     </div>
     <div class="app-shell-loaded app-shell-hide" id="app">
         <!--引入通用的导航部分-->
+        <div class="container"></div>
         #include('../../tpl/header.html')
         <button id="example-modal-button-2" class="button is-primary">Toggle modal</button>
 
@@ -34,7 +35,7 @@
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
-                    <p class="image is-4by3"><img src="https://bulma.io/images/placeholders/1280x960.png" alt=""></p>
+                    <p class="image is-4by3"><img src="./image/640x480.png" alt=""></p>
                 </section>
                 <!-- <footer class="modal-card-foot">
                     <button class="button is-success">Save changes</button>
@@ -42,8 +43,323 @@
                 </footer> -->
             </div>
         </div>
+        <section class="accordions">
+            <article class="accordion is-active">
+                <div class="accordion-header toggle">
+                    <p>Hello World</p>
+                </div>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus
+                            mi</strong>,
+                        tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+                        Nullam
+                        gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+                            lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna
+                        tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+                        facilisis
+                        sodales sem.
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-header">
+                    <p>Hello World</p>
+                    <button class="toggle" aria-label="toggle"></button>
+                </div>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus
+                            mi</strong>,
+                        tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+                        Nullam
+                        gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+                            lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna
+                        tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+                        facilisis
+                        sodales sem.
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-header">
+                    <p>Hello World</p>
+                    <button class="toggle" aria-label="toggle"></button>
+                </div>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus
+                            mi</strong>,
+                        tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+                        Nullam
+                        gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+                            lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna
+                        tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+                        facilisis
+                        sodales sem.
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="steps" id="stepsDemo">
+            <div class="step-item is-active is-success">
+                <div class="step-marker">1</div>
+                <div class="step-details">
+                    <p class="step-title">Account</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-marker">2</div>
+                <div class="step-details">
+                    <p class="step-title">Profile</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-marker">3</div>
+                <div class="step-details">
+                    <p class="step-title">Social</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-marker">4</div>
+                <div class="step-details">
+                    <p class="step-title">Finish</p>
+                </div>
+            </div>
+            <div class="steps-content">
+                <div class="step-content has-text-centered is-active">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Username</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" name="username" id="username" type="text"
+                                        placeholder="Username" autofocus data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Password</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control has-icon has-icon-right">
+                                    <input class="input" type="password" name="password" id="password"
+                                        placeholder="Password" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Confirm password</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control has-icon has-icon-right">
+                                    <input class="input" type="password" name="password_confirm" id="password_confirm"
+                                        placeholder="Confirm password" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-content has-text-centered">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Firstname</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" name="firstname" id="firstname" type="text"
+                                        placeholder="Firstname" autofocus data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Last name</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control has-icon has-icon-right">
+                                    <input class="input" type="text" name="lastname" id="lastname"
+                                        placeholder="Last name" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Email</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control has-icon has-icon-right">
+                                    <input class="input" type="email" name="email" id="email" placeholder="Email"
+                                        data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-content has-text-centered">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Facebook account</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" name="facebook" id="facebook" type="text"
+                                        placeholder="Facebook account url" autofocus data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Twitter account</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" name="twitter" id="twitter" type="text"
+                                        placeholder="Twitter account url" autofocus data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-content has-text-centered">
+                    <h1 class="title is-4">Your account is now created!</h1>
+                </div>
+            </div>
+            <div class="steps-actions">
+                <div class="steps-action">
+                    <a href="#" data-nav="previous" class="button is-light">Previous</a>
+                </div>
+                <div class="steps-action">
+                    <a href="#" data-nav="next" class="button is-light">Next</a>
+                </div>
+            </div>
+        </div>
+        <div class="is-divider" data-content="以下的浏览器"></div>
+        <input id="sliderWithValue" class="slider has-output is-fullwidth" min="0" max="100" value="50" step="1"
+            type="range">
+        <output for="sliderWithValue">50</output>
+        <script>
+            // Find output DOM associated to the DOM element passed as parameter
+            function findOutputForSlider(element) {
+                var idVal = element.id;
+                outputs = document.getElementsByTagName('output');
+                for (var i = 0; i < outputs.length; i++) {
+                    if (outputs[i].htmlFor == idVal)
+                        return outputs[i];
+                }
+            }
+
+            function getSliderOutputPosition(slider) {
+                // Update output position
+                var newPlace,
+                    minValue;
+
+                var style = window.getComputedStyle(slider, null);
+                // Measure width of range input
+                sliderWidth = parseInt(style.getPropertyValue('width'), 10);
+
+                // Figure out placement percentage between left and right of input
+                if (!slider.getAttribute('min')) {
+                    minValue = 0;
+                } else {
+                    minValue = slider.getAttribute('min');
+                }
+                var newPoint = (slider.value - minValue) / (slider.getAttribute('max') - minValue);
+
+                // Prevent bubble from going beyond left or right (unsupported browsers)
+                if (newPoint < 0) {
+                    newPlace = 0;
+                } else if (newPoint > 1) {
+                    newPlace = sliderWidth;
+                } else {
+                    newPlace = sliderWidth * newPoint;
+                }
+
+                return {
+                    'position': newPlace + 'px'
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                // Get all document sliders
+                var sliders = document.querySelectorAll('input[type="range"].slider');
+                [].forEach.call(sliders, function (slider) {
+                    var output = findOutputForSlider(slider);
+                    if (output) {
+                        if (slider.classList.contains('has-output-tooltip')) {
+                            // Get new output position
+                            var newPosition = getSliderOutputPosition(slider);
+
+                            // Set output position
+                            output.style['left'] = newPosition.position;
+                        }
+
+                        // Add event listener to update output when slider value change
+                        slider.addEventListener('input', function (event) {
+                            if (event.target.classList.contains('has-output-tooltip')) {
+                                // Get new output position
+                                var newPosition = getSliderOutputPosition(event.target);
+
+                                // Set output position
+                                output.style['left'] = newPosition.position;
+                            }
+
+                            // Update output with slider value
+                            output.value = event.target.value;
+                        });
+                    }
+                });
+            });
+        </script>
+
+        <div class="field">
+            <input id="switchColorDefault" type="checkbox" name="switchColorDefault" class="switch" checked="checked">
+            <label for="switchColorDefault">Switch default</label>
+        </div>
+
+        <div class="field">
+            <input id="switchColorSuccess" type="checkbox" name="switchColorSuccess" class="switch is-success"
+                checked="checked">
+            <label for="switchColorSuccess">Switch success</label>
+        </div>
+
+        <div class="field">
+            <input id="switchColorWarning" type="checkbox" name="switchColorWarning" class="switch is-warning"
+                checked="checked">
+            <label for="switchColorWarning">Switch warning</label>
+        </div>
+
+        <div class="field">
+            <input id="switchColorDanger" type="checkbox" name="switchColorDanger" class="switch is-danger"
+                checked="checked">
+            <label for="switchColorDanger">Switch danger</label>
+        </div>
+
+        <div class="field">
+            <input id="switchColorInfo" type="checkbox" name="switchColorInfo" class="switch is-info" checked="checked">
+            <label for="switchColorInfo">Switch info</label>
+        </div>
+
         <!--引入通用的底部栏-->
         #include('../../tpl/footer.html')
+    </div>
     </div>
     <div class="app-shell-error app-shell-hide">
         不支持 IE 11 以下的浏览器

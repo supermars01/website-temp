@@ -4,10 +4,10 @@
 
 // 项目中的html文件，不需要后缀
 const HTMLDirs = [
+  "animations",
   "bulmajs",
   "imgHover",
   "index",
-  "animations",
   "index1",
   "test"
 ];

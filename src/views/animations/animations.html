@@ -11,6 +11,8 @@
     <title>首页</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bulma/0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/imagehover.css/1.0/css/imagehover.min.css">
+    <!-- <link rel="stylesheet" href="https://github.com/Martz90/vivify/blob/master/vivify.min.css"> -->
 </head>
 
 <body>
@@ -22,9 +24,10 @@
         </div>
     </div>
     <div class="app-shell-loaded app-shell-hide" id="app">
-        <div id="container">
-            <!--引入通用的导航部分-->
-            #include('../../tpl/header.html')
+
+        <!--引入通用的导航部分-->
+        #include('../../tpl/header.html')
+        <div class="container">
             <!-- <div id="main">
                 <section class="wow fadeInDown" style="background-color: #f1c40f;"></section>
                 <section class="wow pulse" style="background-color: #e74c3c;" data-wow-iteration="infinite"></section>
@@ -32,7 +35,16 @@
                 <section class="section--blue wow bounceInLeft" data-wow-offset="300"></section>
                 <section class="section--green wow slideInLeft" data-wow-duration="1s"></section>
             </div> -->
-            <div class="columns is-centered" id="movieposters">
+            <style>
+                .vivify {
+                    width: 200px;
+                    height: 200px;
+                    background-color: blue;
+                }
+            </style>
+            <div class="vivify spin">asdasdas</div>
+            <!-- 以上为vivify动画http://vivify.mkcreative.cz/ -->
+            <!-- <div class="columns is-centered" id="movieposters">
                 <div class="column">
                     <div class="card">
                         <div class="card-image">
@@ -100,18 +112,170 @@
                                 Button
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- http://www.imagehover.io/ -->
+            <div class="columns">
+                <div class="column">
+                    <figure class="imghvr-fade"><img src="./image/640x480.png" alt="example-image">
+                        <figcaption>
+                            <h3>Hello World</h3>
+                            <p>Life is too important to be taken seriously!</p>
+                        </figcaption><a href="javascript:;"></a>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="imghvr-push-up"><img src="./image/640x480.png" alt="example-image">
+                        <figcaption>
+                            <h3>Hello World</h3>
+                            <p>Life is too important to be taken seriously!</p>
+                        </figcaption><a href="javascript:;"></a>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="imghvr-push-down"><img src="./image/640x480.png" alt="example-image">
+                        <figcaption>
+                            <h3>Hello World</h3>
+                            <p>Life is too important to be taken seriously!</p>
+                        </figcaption><a href="javascript:;"></a>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="imghvr-push-right"><img src="./image/640x480.png" alt="example-image">
+                        <figcaption>
+                            <h3>Hello World</h3>
+                            <p>Life is too important to be taken seriously!</p>
+                        </figcaption><a href="javascript:;"></a>
+                    </figure>
+                </div>
+            </div>
+            <!-- <div class="columns is-centered" id="movieposters">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img data-src="./image/iron_man.jpg"
+                                    data-srcset="./image/last_air.jpg 1x,./image/tron_legacy.jpg 2x" class="lazyload"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content movieinfo">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title">钢铁侠</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                (Tony Stark)托尼·斯塔克即(Iron Man)钢铁侠,是美国漫威漫画旗下的超级英雄
+                            </div>
+                            <a class="button is-medium">
+                                Button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img data-src="./image/last_air.jpg" class="lazyload" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content movieinfo">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title">钢铁侠</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                (Tony Stark)托尼·斯塔克即(Iron Man)钢铁侠,是美国漫威漫画旗下的超级英雄
+                            </div>
+                            <a class="button is-medium">
+                                Button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img data-src="./image/tron_legacy.jpg" class="lazyload" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content movieinfo">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title">钢铁侠</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                (Tony Stark)托尼·斯塔克即(Iron Man)钢铁侠,是美国漫威漫画旗下的超级英雄
+                            </div>
+                            <a class="button is-medium">
+                                Button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="columns">
+                <div class="column is-half">
+                    <figure class="image is-1by1 is-480x480">
+                        <img class="lazyload" data-src="../../static/image/480x480.png"
+                            data-srcset="../../static/image/480x480.png 1x,../../static/image/256x256.png 2x">
+                    </figure>
+                    <a class="button is-primary  is-outlined">普通图标</a>
+                    <p class="has-text-centered-touch">阿三大a三大四</p>
+                </div>
+                <div class="column">
+                    <figure class="image is-4by3 is-640x480">
+                        <img class="lazyload" data-src="./image/640x480.png">
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="image is-4by3 is-640x480">
+                        <img class="lazyload" data-src="./image/640x480.png">
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="image is-4by3 is-640x480">
+                        <img class="lazyload" data-src="./image/640x480.png">
+                    </figure>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="box" style="width: 200px;">
+                        <p class="title is-5">Narrow column</p>
+                        <p class="subtitle">This column is only 200px wide.</p>
+                    </div>
+                </div>
+                <div class="column is-4 has-text-centered is-offset-4" style="background-color: red;">
+                    我就是一个空行 colum
+                </div>
+
+                <div class="column">
+                    <div class="box">
+                        <p class="title is-5">Flexible column</p>
+                        <p class="subtitle">This column will take up the remaining space available.</p>
                     </div>
                 </div>
             </div>
-            <!--引入通用的底部栏-->
-            #include('../../tpl/footer.html')
         </div>
+        <!--引入通用的底部栏-->
+        #include('../../tpl/footer.html')
     </div>
     <div class="app-shell-error app-shell-hide">
         不支持 IE 11 以下的浏览器
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.bootcss.com/lazysizes/5.1.2/lazysizes.min.js"></script>
     <script src="https://cdn.bootcss.com/font-awesome/5.11.2/js/all.min.js"></script>
 </body>
 
